@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    padding: 20px;
+  }
+  
+  .login {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 95%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .overview {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .overview h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100px;
+  }
+  
+  
+  .dashboard h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+  }
+  
+
+  
