@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+const API_KEY = import.meta.env.VITE_API_KEY;
 const Filters = () => {
   const [articles, setArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
@@ -11,7 +11,7 @@ const Filters = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=technology&apiKey=c72a6c6cbc2844708334457fc75ca841`
+          `https://newsapi.org/v2/everything?q=technology&apiKey=${API_KEY}`
         );
         setArticles(response.data.articles || []);
         const fetchedArticles = response.data.articles || [];

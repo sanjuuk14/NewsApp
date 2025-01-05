@@ -9,7 +9,7 @@ import {
   Legend,
 } from "recharts";
 import axios from "axios";
-
+const API_KEY = import.meta.env.VITE_API_KEY;
 const Chart = () => {
   const [authorData, setAuthorData] = useState([]);
   const [typeData, setTypeData] = useState([]);
@@ -18,7 +18,7 @@ const Chart = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=technology&apiKey=c72a6c6cbc2844708334457fc75ca841`
+          `https://newsapi.org/v2/everything?q=technology&apiKey=${API_KEY}`
         );
         const articles = response.data.articles || [];
 

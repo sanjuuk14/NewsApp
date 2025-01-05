@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+const API_KEY = import.meta.env.VITE_API_KEY;
 const PayoutTable = () => {
   const [articles, setArticles] = useState([]);
   const [authorPayouts, setAuthorPayouts] = useState({});
@@ -10,7 +10,7 @@ const PayoutTable = () => {
     const fetchArticles = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=technology&apiKey=c72a6c6cbc2844708334457fc75ca841`
+          `https://newsapi.org/v2/everything?q=technology&apiKey=${API_KEY}`
         );
         const fetchedArticles = response.data.articles || [];
 
